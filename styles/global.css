@@ -1,9 +1,12 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 :root {
     --font-family: "Poppins", sans-serif;
-    --h1: 800 2rem/120% var(--font-family);
-    --h2: 800 1.5rem/120% var(--font-family);
-    --h3: 800 1.25rem/120% var(--font-family);
-    --h4: 800 1rem/120% var(--font-family);
+
     --text: 400 1rem/1.5 var(--font-family);
     --text-sm: 400 0.875rem/1.4 var(--font-family);
 
@@ -30,6 +33,15 @@
 }
 
 body {
-    font-family: var(--font-family);
+    font: var(--text);
+    color: var(--text-secondary);
+    overflow: hidden;
+}
+h1, h2, h3, h4 {
     color: var(--text-primary);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
 }
